@@ -3,8 +3,6 @@
 // (no lines with multiple semicolons necessary!)
 // Execute `rustlings hint move_semantics3` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
-
 fn main() {
     let vec0 = Vec::new();
 
@@ -18,9 +16,10 @@ fn main() {
 }
 
 fn fill_vec(vec: Vec<i32>) -> Vec<i32> {
-    vec.push(22);
-    vec.push(44);
-    vec.push(66);
+    let mut v = Vec::new();
+    v.push(22);
+    v.push(44);
+    v.push(66);
 
-    vec
+    v
 }
